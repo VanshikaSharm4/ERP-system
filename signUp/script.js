@@ -1,4 +1,9 @@
 let form = document.getElementById("signupForm");
+let userArray =[];
+userArray = localStorage.getItem("userArray");
+ userArray = JSON.parse(userArray);
+ if(!userArray) userArray=[];
+
 form.addEventListener("submit", function(event){
     event.preventDefault();
 
@@ -9,7 +14,7 @@ form.addEventListener("submit", function(event){
     const password = form[4].value;
     const iAgree = form[5].value;
 
-    let userArray = {
+    let tempUser = {
         userType,
         name : {
             first: firstName,
@@ -18,10 +23,12 @@ form.addEventListener("submit", function(event){
         email,
         password
     }
-
+    userArray.push(tempUser);
     console.log(userArray)
     
     localStorage.setItem('userArray', JSON.stringify(userArray));
+    window.location.href= "login.html";
+
 })
 
 
