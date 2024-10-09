@@ -23,7 +23,7 @@ function login(){
      if(objFound.password == userObj.password){
         if(objFound.userType=="Student"){
             // student home
-            window.location.href= "home.html";
+            window.location.href= "index.html";
         }
         else if(objFound.userType=="Teacher"){
             // teacher home
