@@ -44,7 +44,7 @@ form.addEventListener("submit", function(event){
     successful.innerText = "Sign Up Succesful";
     cardBody.prepend(successful);
     setTimeout(function(){
-        window.location.href= "index.html";
+        window.location.href= "login.html";
     },3000)
 
     
