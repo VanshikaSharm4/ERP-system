@@ -65,6 +65,9 @@
     overflow: visible;
 
 }
+main{
+  position: relative;
+}
 
 #IN-MH:hover,
 #IN-RJ:hover,
