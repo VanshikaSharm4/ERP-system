@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropdownBody{
+    height: 10px;
+}
+
+.top{
+    background-image: url("assets/starry.jpg");
+    height: 95vh;
+    width: 100vw;
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-blend-mode: darken; */
+    /* background-color: rgba(54, 49, 49, 0.927);     */
+}
+
+.top h3{
+    color: white;
+    font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  padding: 5px 0px 0px 30px;
+}
+
+.title{
+    color: white;
+    margin: 3vh 0 0 20vh;
+    max-width: 600px;
+    text-shadow: 2px 2px 2px black;
+    
+}
+
+.title .no_more{
+    font-family: "Londrina Outline", sans-serif;
+  font-weight: bolder;
+  font-size: 8rem;
+}
+
+.title .paperwork{
+    font-size: 3.4rem;
+    font-weight: 900;
+}
+
+.title p{
+    font-weight: 200;
+    font-size: 1.7rem;
+    font-style: normal;
+}
+
+.map{
+    position: absolute;
+    right: 30vh;
+    top: 0;
+    overflow: visible;
+
+}
+
+#IN-MH:hover,
+#IN-RJ:hover,
+#IN-T:hover,
+#IN-HP:hover,
+#IN-BR:hover,
+#IN-TN:hover,
+#IN-JK:hover {
+    fill: rgb(173, 50, 255);
+    cursor: pointer;
+}
+#IN-MH, #IN-RJ, #IN-T, #IN-HP, #IN-BR, #IN-JK, #IN-TN{
+    fill: rgb(27, 37, 89);
+}
+
+@keyframes idleMovement {
+    0% {
+        transform: rotateX(15deg) rotateY(15deg);
+    }
+    50% {
+        transform: rotateX(10deg) rotateY(20deg);
+    }
+    100% {
+        transform: rotateX(15deg) rotateY(15deg);
+    }
+}
+
+.map {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    animation: idleMovement 3s infinite ease-in-out; 
+}
+
+#IN-MH, #IN-RJ, #IN-T, #IN-HP, #IN-BR, #IN-TN, #IN-JK {
+    transition: transform 0.3s ease; 
+}
+
+#IN-MH:hover, #IN-RJ:hover, #IN-T:hover, #IN-HP:hover, #IN-BR:hover, #IN-TN:hover, #IN-JK:hover {
+    transform: rotateX(0deg) rotateY(0deg); 
+}
+
+.space-button {
+    display: inline-block;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 32px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 5px 5px 15px white;
+  }
+  
+  .space-button span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .space-button svg {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    fill: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .space-button:hover {
+    background-color: #f8f8f8;
+    color: #111;
+  }
+  
+  .space-button:hover svg {
+    transform: translateX(4px);
+  }
+  
+  .space-button:active {
+    background-color: #f94b4c;
+    color: #fff;
+  }
+
+  .tooltip {
+    display: none;
+    position: absolute; /* Position the tooltip absolutely */
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  svg {
+    width: 100%;
+    height: auto; 
+  }
+  
+
+
+
+
+
+  
